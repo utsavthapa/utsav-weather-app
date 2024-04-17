@@ -2,8 +2,6 @@ import { LiaWindSolid } from "react-icons/lia";
 import { WiHumidity } from "react-icons/wi";
 import { GiPressureCooker } from "react-icons/gi";
 const CurrentWeather = ({ weatherData }) => {
-  console.log("weatherData ===> ", weatherData);
-
   return (
     <>
       <div className="place">

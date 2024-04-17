@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 
 const HourlyForecast = ({ hourlyData }) => {
-  console.log("hourlyData ===> ", hourlyData);
   const containerRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(null);
