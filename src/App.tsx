@@ -12,8 +12,8 @@ export const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const position = await getCurrentPosition();
-      const { latitude, longitude } = position.coords;
+      const position: any = await getCurrentPosition();
+      const { latitude, longitude } = position?.coords;
       setError(null);
       try {
         const data = await fetchWeatherData(latitude, longitude);
